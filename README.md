@@ -10,4 +10,6 @@
 
 
 
+These steps were tested on a Raspberry Pi Compute module 4 and eventually Xenomai and Cobalt were running on this hardware.
+
 #### Note: If you see any mistakes please let me know.
