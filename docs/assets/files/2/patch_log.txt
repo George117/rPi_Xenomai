@@ -1,0 +1,428 @@
+patching file Documentation/dovetail.rst
+patching file arch/Kconfig
+patching file arch/arm/Kconfig
+patching file arch/arm/common/mcpm_entry.c
+patching file arch/arm/include/asm/assembler.h
+patching file arch/arm/include/asm/atomic.h
+patching file arch/arm/include/asm/bitops.h
+patching file arch/arm/include/asm/cmpxchg.h
+patching file arch/arm/include/asm/dovetail.h
+patching file arch/arm/include/asm/efi.h
+patching file arch/arm/include/asm/irq_pipeline.h
+patching file arch/arm/include/asm/irqflags.h
+Hunk #7 FAILED at 177.
+1 out of 7 hunks FAILED -- saving rejects to file arch/arm/include/asm/irqflags.h.rej
+patching file arch/arm/include/asm/mmu_context.h
+patching file arch/arm/include/asm/outercache.h
+patching file arch/arm/include/asm/ptrace.h
+patching file arch/arm/include/asm/syscall.h
+patching file arch/arm/include/asm/thread_info.h
+patching file arch/arm/include/asm/trace/exceptions.h
+patching file arch/arm/include/asm/vdso/gettimeofday.h
+patching file arch/arm/kernel/Makefile
+patching file arch/arm/kernel/asm-offsets.c
+patching file arch/arm/kernel/entry-armv.S
+patching file arch/arm/kernel/entry-common.S
+patching file arch/arm/kernel/entry-header.S
+patching file arch/arm/kernel/irq.c
+patching file arch/arm/kernel/irq_pipeline.c
+patching file arch/arm/kernel/patch.c
+patching file arch/arm/kernel/process.c
+patching file arch/arm/kernel/ptrace.c
+patching file arch/arm/kernel/raw_printk.c
+patching file arch/arm/kernel/signal.c
+patching file arch/arm/kernel/smp.c
+patching file arch/arm/kernel/smp_twd.c
+patching file arch/arm/kernel/traps.c
+patching file arch/arm/kernel/vdso.c
+patching file arch/arm/mach-imx/gpc.c
+patching file arch/arm/mm/alignment.c
+patching file arch/arm/mm/cache-l2x0.c
+patching file arch/arm/mm/context.c
+patching file arch/arm/mm/fault.c
+patching file arch/arm/vdso/datapage.S
+patching file arch/arm/vfp/entry.S
+patching file arch/arm/vfp/vfphw.S
+patching file arch/arm/vfp/vfpmodule.c
+Hunk #7 succeeded at 193 (offset 3 lines).
+Hunk #8 succeeded at 331 (offset 3 lines).
+Hunk #9 succeeded at 361 (offset 3 lines).
+Hunk #10 succeeded at 374 (offset 3 lines).
+Hunk #11 succeeded at 425 (offset 3 lines).
+Hunk #12 succeeded at 535 (offset 6 lines).
+Hunk #13 succeeded at 550 (offset 7 lines).
+patching file arch/arm64/Kconfig
+patching file arch/arm64/boot/dts/broadcom/Makefile
+Hunk #1 succeeded at 4 with fuzz 2.
+patching file arch/arm64/boot/dts/broadcom/bcm2837-rpi-3-b-nobt.dts
+patching file arch/arm64/include/asm/daifflags.h
+patching file arch/arm64/include/asm/dovetail.h
+patching file arch/arm64/include/asm/efi.h
+patching file arch/arm64/include/asm/fpsimd.h
+patching file arch/arm64/include/asm/irq_pipeline.h
+patching file arch/arm64/include/asm/irqflags.h
+patching file arch/arm64/include/asm/mmu_context.h
+patching file arch/arm64/include/asm/ptrace.h
+patching file arch/arm64/include/asm/syscall.h
+patching file arch/arm64/include/asm/thread_info.h
+patching file arch/arm64/include/asm/uaccess.h
+patching file arch/arm64/include/asm/vdso.h
+patching file arch/arm64/include/asm/vdso/gettimeofday.h
+patching file arch/arm64/kernel/Makefile
+patching file arch/arm64/kernel/asm-offsets.c
+patching file arch/arm64/kernel/debug-monitors.c
+patching file arch/arm64/kernel/entry-common.c
+patching file arch/arm64/kernel/fpsimd.c
+patching file arch/arm64/kernel/idle.c
+patching file arch/arm64/kernel/irq.c
+patching file arch/arm64/kernel/irq_pipeline.c
+patching file arch/arm64/kernel/signal.c
+patching file arch/arm64/kernel/smp.c
+patching file arch/arm64/kernel/syscall.c
+patching file arch/arm64/kernel/traps.c
+patching file arch/arm64/kernel/vdso.c
+patching file arch/arm64/kernel/vdso/vdso.lds.S
+patching file arch/arm64/kernel/vdso32/vdso.lds.S
+patching file arch/arm64/mm/context.c
+patching file arch/arm64/mm/fault.c
+patching file arch/x86/Kconfig
+patching file arch/x86/entry/common.c
+patching file arch/x86/entry/entry_64.S
+patching file arch/x86/hyperv/hv_init.c
+patching file arch/x86/include/asm/apic.h
+patching file arch/x86/include/asm/dovetail.h
+patching file arch/x86/include/asm/fpu/api.h
+patching file arch/x86/include/asm/fpu/internal.h
+patching file arch/x86/include/asm/fpu/types.h
+patching file arch/x86/include/asm/i8259.h
+patching file arch/x86/include/asm/idtentry.h
+patching file arch/x86/include/asm/irq_pipeline.h
+patching file arch/x86/include/asm/irq_stack.h
+patching file arch/x86/include/asm/irq_vectors.h
+patching file arch/x86/include/asm/irqflags.h
+patching file arch/x86/include/asm/mmu_context.h
+patching file arch/x86/include/asm/special_insns.h
+patching file arch/x86/include/asm/syscall.h
+patching file arch/x86/include/asm/thread_info.h
+patching file arch/x86/include/asm/tlbflush.h
+patching file arch/x86/include/asm/uaccess.h
+patching file arch/x86/kernel/Makefile
+patching file arch/x86/kernel/alternative.c
+patching file arch/x86/kernel/apic/apic.c
+patching file arch/x86/kernel/apic/apic_flat_64.c
+patching file arch/x86/kernel/apic/apic_numachip.c
+patching file arch/x86/kernel/apic/io_apic.c
+patching file arch/x86/kernel/apic/ipi.c
+patching file arch/x86/kernel/apic/msi.c
+patching file arch/x86/kernel/apic/vector.c
+patching file arch/x86/kernel/apic/x2apic_cluster.c
+patching file arch/x86/kernel/apic/x2apic_phys.c
+patching file arch/x86/kernel/asm-offsets.c
+patching file arch/x86/kernel/cpu/acrn.c
+patching file arch/x86/kernel/cpu/mce/amd.c
+patching file arch/x86/kernel/cpu/mce/core.c
+patching file arch/x86/kernel/cpu/mce/threshold.c
+patching file arch/x86/kernel/cpu/mshyperv.c
+patching file arch/x86/kernel/cpu/mtrr/generic.c
+patching file arch/x86/kernel/dumpstack.c
+patching file arch/x86/kernel/fpu/core.c
+patching file arch/x86/kernel/fpu/signal.c
+patching file arch/x86/kernel/fpu/xstate.c
+patching file arch/x86/kernel/hpet.c
+patching file arch/x86/kernel/i8259.c
+patching file arch/x86/kernel/idt.c
+patching file arch/x86/kernel/irq.c
+patching file arch/x86/kernel/irq_pipeline.c
+patching file arch/x86/kernel/irq_work.c
+patching file arch/x86/kernel/kvm.c
+patching file arch/x86/kernel/nmi.c
+patching file arch/x86/kernel/process.c
+patching file arch/x86/kernel/process_64.c
+patching file arch/x86/kernel/smp.c
+patching file arch/x86/kernel/smpboot.c
+patching file arch/x86/kernel/time.c
+patching file arch/x86/kernel/traps.c
+patching file arch/x86/kernel/tsc.c
+patching file arch/x86/kernel/tsc_sync.c
+patching file arch/x86/kvm/emulate.c
+patching file arch/x86/kvm/fpu.h
+patching file arch/x86/kvm/hyperv.c
+patching file arch/x86/kvm/vmx/vmx.c
+patching file arch/x86/kvm/x86.c
+patching file arch/x86/lib/usercopy.c
+patching file arch/x86/mm/fault.c
+patching file arch/x86/mm/tlb.c
+patching file arch/x86/platform/efi/efi_64.c
+patching file arch/x86/xen/Kconfig
+patching file arch/x86/xen/enlighten_hvm.c
+patching file drivers/base/regmap/internal.h
+patching file drivers/base/regmap/regmap-irq.c
+patching file drivers/base/regmap/regmap.c
+patching file drivers/clocksource/Kconfig
+patching file drivers/clocksource/arm_arch_timer.c
+patching file drivers/clocksource/arm_global_timer.c
+patching file drivers/clocksource/bcm2835_timer.c
+patching file drivers/clocksource/clksrc_st_lpc.c
+patching file drivers/clocksource/dw_apb_timer.c
+patching file drivers/clocksource/exynos_mct.c
+patching file drivers/clocksource/mmio.c
+patching file drivers/clocksource/timer-imx-gpt.c
+patching file drivers/clocksource/timer-sun4i.c
+patching file drivers/clocksource/timer-ti-dm-systimer.c
+patching file drivers/cpuidle/cpuidle.c
+patching file drivers/cpuidle/poll_state.c
+patching file drivers/dma/Kconfig
+patching file drivers/dma/bcm2835-dma.c
+Hunk #1 succeeded at 30 (offset 1 line).
+Hunk #2 succeeded at 666 (offset 230 lines).
+Hunk #3 FAILED at 458.
+Hunk #4 succeeded at 709 (offset 238 lines).
+Hunk #5 succeeded at 717 (offset 238 lines).
+Hunk #6 FAILED at 489.
+Hunk #7 succeeded at 821 (offset 238 lines).
+Hunk #8 succeeded at 850 (offset 246 lines).
+Hunk #9 succeeded at 860 (offset 246 lines).
+Hunk #10 succeeded at 933 (offset 248 lines).
+Hunk #11 succeeded at 1017 (offset 258 lines).
+Hunk #12 succeeded at 1116 (offset 267 lines).
+Hunk #13 succeeded at 1126 (offset 267 lines).
+Hunk #14 succeeded at 1307 (offset 337 lines).
+Hunk #15 FAILED at 1042.
+3 out of 15 hunks FAILED -- saving rejects to file drivers/dma/bcm2835-dma.c.rej
+patching file drivers/dma/dmaengine.c
+patching file drivers/dma/imx-sdma.c
+patching file drivers/dma/virt-dma.c
+patching file drivers/dma/virt-dma.h
+patching file drivers/gpio/gpio-mxc.c
+patching file drivers/gpio/gpio-omap.c
+patching file drivers/gpio/gpio-pl061.c
+patching file drivers/gpio/gpio-xilinx.c
+patching file drivers/gpio/gpio-zynq.c
+patching file drivers/gpu/drm/msm/disp/dpu1/dpu_mdss.c
+patching file drivers/gpu/drm/msm/disp/mdp5/mdp5_mdss.c
+patching file drivers/gpu/ipu-v3/ipu-common.c
+patching file drivers/hv/Kconfig
+patching file drivers/iio/industrialio-trigger.c
+patching file drivers/irqchip/exynos-combiner.c
+patching file drivers/irqchip/irq-bcm2835.c
+Hunk #1 FAILED at 102.
+1 out of 1 hunk FAILED -- saving rejects to file drivers/irqchip/irq-bcm2835.c.rej
+patching file drivers/irqchip/irq-bcm2836.c
+Hunk #1 succeeded at 61 (offset 3 lines).
+Hunk #2 succeeded at 78 (offset 3 lines).
+Hunk #3 succeeded at 114 (offset 24 lines).
+patching file drivers/irqchip/irq-gic-v2m.c
+patching file drivers/irqchip/irq-gic-v3.c
+patching file drivers/irqchip/irq-gic.c
+patching file drivers/irqchip/irq-imx-irqsteer.c
+patching file drivers/irqchip/irq-omap-intc.c
+patching file drivers/irqchip/irq-sun4i.c
+patching file drivers/irqchip/irq-sunxi-nmi.c
+patching file drivers/memory/omap-gpmc.c
+patching file drivers/mfd/tps65217.c
+patching file drivers/pci/controller/dwc/pcie-designware-host.c
+patching file drivers/pci/controller/pcie-brcmstb.c
+Hunk #1 succeeded at 467 (offset 2 lines).
+Hunk #2 succeeded at 531 (offset 3 lines).
+patching file drivers/pinctrl/bcm/pinctrl-bcm2835.c
+patching file drivers/pinctrl/intel/pinctrl-cherryview.c
+patching file drivers/pinctrl/qcom/pinctrl-msm.c
+patching file drivers/pinctrl/samsung/pinctrl-exynos.c
+patching file drivers/pinctrl/samsung/pinctrl-samsung.h
+patching file drivers/pinctrl/sunxi/pinctrl-sunxi.c
+patching file drivers/pinctrl/sunxi/pinctrl-sunxi.h
+patching file drivers/soc/qcom/smp2p.c
+patching file drivers/spi/Kconfig
+patching file drivers/spi/spi-bcm2835.c
+Hunk #1 FAILED at 1041.
+Hunk #2 succeeded at 1080 (offset 14 lines).
+Hunk #3 succeeded at 1346 (offset 14 lines).
+Hunk #4 succeeded at 1429 (offset 14 lines).
+1 out of 4 hunks FAILED -- saving rejects to file drivers/spi/spi-bcm2835.c.rej
+patching file drivers/spi/spi.c
+Hunk #2 succeeded at 3912 (offset 9 lines).
+Hunk #3 succeeded at 4012 (offset 9 lines).
+Hunk #4 succeeded at 4061 (offset 9 lines).
+Hunk #5 succeeded at 4090 (offset 9 lines).
+Hunk #6 succeeded at 4175 (offset 9 lines).
+patching file drivers/spmi/spmi-pmic-arb.c
+patching file drivers/tty/serial/8250/8250_core.c
+patching file drivers/tty/serial/amba-pl011.c
+Hunk #1 succeeded at 2001 (offset 48 lines).
+Hunk #2 succeeded at 2356 (offset 50 lines).
+Hunk #3 succeeded at 2516 (offset 50 lines).
+Hunk #4 succeeded at 2589 (offset 50 lines).
+patching file drivers/tty/serial/imx.c
+patching file drivers/tty/serial/samsung_tty.c
+patching file drivers/tty/serial/st-asc.c
+patching file fs/eventfd.c
+patching file fs/exec.c
+patching file fs/fcntl.c
+patching file fs/file.c
+patching file fs/ioctl.c
+patching file include/asm-generic/atomic.h
+patching file include/asm-generic/cmpxchg-local.h
+patching file include/asm-generic/cmpxchg.h
+patching file include/asm-generic/irq_pipeline.h
+patching file include/asm-generic/percpu.h
+patching file include/dovetail/irq.h
+patching file include/dovetail/mm_info.h
+patching file include/dovetail/netdevice.h
+patching file include/dovetail/poll.h
+patching file include/dovetail/spinlock.h
+patching file include/dovetail/thread_info.h
+patching file include/linux/clockchips.h
+patching file include/linux/clocksource.h
+patching file include/linux/console.h
+patching file include/linux/context_tracking_state.h
+patching file include/linux/dmaengine.h
+patching file include/linux/dovetail.h
+patching file include/linux/dw_apb_timer.h
+patching file include/linux/entry-common.h
+patching file include/linux/fcntl.h
+patching file include/linux/fs.h
+Hunk #1 succeeded at 57 (offset 1 line).
+Hunk #2 succeeded at 994 (offset 1 line).
+Hunk #3 succeeded at 1927 (offset -76 lines).
+Hunk #4 succeeded at 2010 (offset -76 lines).
+patching file include/linux/hardirq.h
+patching file include/linux/intel-iommu.h
+patching file include/linux/interrupt.h
+patching file include/linux/irq.h
+patching file include/linux/irq_pipeline.h
+patching file include/linux/irqdesc.h
+patching file include/linux/irqflags.h
+patching file include/linux/irqstage.h
+patching file include/linux/kernel.h
+patching file include/linux/kvm_host.h
+patching file include/linux/lockdep.h
+patching file include/linux/mm.h
+patching file include/linux/mm_types.h
+patching file include/linux/net.h
+patching file include/linux/netdevice.h
+patching file include/linux/poll.h
+patching file include/linux/preempt.h
+patching file include/linux/printk.h
+patching file include/linux/rcupdate.h
+patching file include/linux/regmap.h
+patching file include/linux/sched.h
+patching file include/linux/sched/coredump.h
+patching file include/linux/skbuff.h
+patching file include/linux/smp.h
+patching file include/linux/socket.h
+patching file include/linux/spi/spi.h
+patching file include/linux/spinlock.h
+patching file include/linux/spinlock_api_up.h
+patching file include/linux/spinlock_pipeline.h
+patching file include/linux/spinlock_types.h
+patching file include/linux/stop_machine.h
+patching file include/linux/thread_info.h
+patching file include/linux/tick.h
+patching file include/linux/trace_events.h
+patching file include/linux/tracepoint.h
+patching file include/linux/vmalloc.h
+patching file include/net/netoob.h
+patching file include/net/sock.h
+patching file include/trace/events/irq.h
+patching file include/uapi/asm-generic/dovetail.h
+patching file include/uapi/asm-generic/fcntl.h
+patching file include/uapi/linux/clocksource.h
+patching file include/vdso/datapage.h
+patching file init/Kconfig
+patching file init/Makefile
+patching file init/main.c
+patching file kernel/Kconfig.dovetail
+patching file kernel/Makefile
+patching file kernel/debug/debug_core.c
+patching file kernel/dovetail.c
+patching file kernel/entry/common.c
+patching file kernel/exit.c
+patching file kernel/fork.c
+patching file kernel/irq/Kconfig
+patching file kernel/irq/Makefile
+patching file kernel/irq/chip.c
+patching file kernel/irq/cpuhotplug.c
+patching file kernel/irq/debug.h
+patching file kernel/irq/dummychip.c
+patching file kernel/irq/generic-chip.c
+patching file kernel/irq/handle.c
+patching file kernel/irq/internals.h
+patching file kernel/irq/irqdesc.c
+patching file kernel/irq/irqptorture.c
+patching file kernel/irq/manage.c
+patching file kernel/irq/msi.c
+patching file kernel/irq/pipeline.c
+patching file kernel/irq/proc.c
+patching file kernel/irq/resend.c
+patching file kernel/irq/settings.h
+patching file kernel/irq_work.c
+patching file kernel/kthread.c
+patching file kernel/locking/Makefile
+patching file kernel/locking/lockdep.c
+patching file kernel/locking/lockdep_internals.h
+patching file kernel/locking/pipeline.c
+patching file kernel/locking/spinlock_debug.c
+patching file kernel/notifier.c
+patching file kernel/panic.c
+patching file kernel/power/hibernate.c
+patching file kernel/printk/internal.h
+patching file kernel/printk/printk.c
+patching file kernel/printk/printk_ringbuffer.c
+patching file kernel/printk/printk_ringbuffer.h
+patching file kernel/printk/printk_safe.c
+patching file kernel/ptrace.c
+patching file kernel/rcu/tree.c
+patching file kernel/rcu/tree_plugin.h
+patching file kernel/rcu/update.c
+patching file kernel/sched/core.c
+patching file kernel/sched/idle.c
+patching file kernel/sched/sched.h
+patching file kernel/sched/wait.c
+patching file kernel/signal.c
+patching file kernel/stop_machine.c
+patching file kernel/time/Makefile
+patching file kernel/time/clockevents.c
+patching file kernel/time/clocksource.c
+patching file kernel/time/hrtimer.c
+patching file kernel/time/tick-broadcast.c
+patching file kernel/time/tick-common.c
+patching file kernel/time/tick-internal.h
+patching file kernel/time/tick-proxy.c
+patching file kernel/time/vsyscall.c
+patching file kernel/trace/ftrace.c
+patching file kernel/trace/ring_buffer.c
+patching file kernel/trace/trace.c
+patching file kernel/trace/trace_branch.c
+patching file kernel/trace/trace_clock.c
+patching file kernel/trace/trace_functions.c
+patching file kernel/trace/trace_functions_graph.c
+patching file kernel/trace/trace_irqsoff.c
+patching file kernel/trace/trace_output.c
+patching file kernel/trace/trace_preemptirq.c
+patching file kernel/trace/trace_sched_wakeup.c
+patching file kernel/trace/trace_stack.c
+patching file lib/Kconfig.debug
+patching file lib/atomic64.c
+patching file lib/dump_stack.c
+patching file lib/smp_processor_id.c
+patching file lib/vdso/Kconfig
+patching file lib/vdso/gettimeofday.c
+patching file mm/huge_memory.c
+patching file mm/hugetlb.c
+patching file mm/kasan/report.c
+patching file mm/memory.c
+patching file mm/mprotect.c
+patching file mm/vmalloc.c
+patching file net/Kconfig
+patching file net/core/dev.c
+patching file net/core/net-sysfs.c
+patching file net/core/skbuff.c
+patching file net/packet/af_packet.c
+patching file net/sched/Kconfig
+patching file net/sched/Makefile
+patching file net/sched/sch_oob.c
+patching file net/socket.c
+patching file scripts/mkcompile_h
+patching file security/selinux/hooks.c
+patching file security/selinux/include/classmap.h
+patching file tools/perf/trace/beauty/include/linux/socket.h
