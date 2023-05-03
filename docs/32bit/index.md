@@ -8,4 +8,4 @@
 
 #### These steps were tested on a Raspberry Pi Compute module 4 and eventually Xenomai and Cobalt were running on this hardware.
 
-![latency](assets/images/latency_tests.png)
+![latency](../assets/images/latency_tests.png)
