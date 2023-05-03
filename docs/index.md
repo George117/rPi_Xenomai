@@ -1,8 +1,8 @@
 # Table of contents
-1. [Chapter 0: A new beginning - Prerequisites](chapter_0.md)
-2. [Chapter 1: What about dependencies?](chapter_1.md)
-3. [Chapter 2: A manual journey - patch the kernel with Cobalt](chapter_2.md)
-4. [Chapter 3: Are we there yet? Install xenomai on rPi](chapter_3.md)
+## 1. [Chapter 0: A new beginning - Prerequisites](chapter_0.md)
+## 2. [Chapter 1: What about dependencies?](chapter_1.md)
+## 3. [Chapter 2: A manual journey - patch the kernel with Cobalt](chapter_2.md)
+## 4. [Chapter 3: Are we there yet? Install xenomai on rPi](chapter_3.md)
 
 
 ### Step by step guide on how to experience the glory of xenomai on your rPi
