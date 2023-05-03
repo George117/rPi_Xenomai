@@ -44,7 +44,7 @@ patch -p1 < ../patch-5.15.51-dovetail1.patch  2>&1 | tee patch_log.txt
 ```
 
 ## 4. Fix the files where the patch did not apply
-Full log: [patch_log.txt](https://github.com/George117/rpi-kernel-compile/files/11250878/patch_log.txt)
+Full log: [patch_log.txt](/docs/assets/files/2/patch_log.txt)
 
 ```
 Hunk #7 FAILED at 177.
@@ -82,12 +82,17 @@ Hunk #4 succeeded at 1429 (offset 14 lines).
 ```
 
 #### Fixed files (no guarantees)
-[./include/linux/node.h](https://github.com/George117/rpi-kernel-compile/files/11251164/node.h.zip) Note: this is not from the patching process and only needed on 32Bit 
-[./arch/arm/include/asm/irqflags.h](https://github.com/George117/rpi-kernel-compile/files/11251251/irqflags.h.zip)
-[./drivers/dma/bcm2835-dma.c](https://github.com/George117/rpi-kernel-compile/files/11251257/bcm2835-dma.c.zip)
-[./drivers/irqchip/irq-bcm2835.c](https://github.com/George117/rpi-kernel-compile/files/11251261/irq-bcm2835.c.zip)
-[./drivers/spi/spi-bcm2835.c](https://github.com/George117/rpi-kernel-compile/files/11251266/spi-bcm2835.c.zip)
-[files.zip](https://github.com/George117/rpi-kernel-compile/files/11269201/files.zip)
+[./include/linux/node.h](/docs/assets/files/2/node.h) Note: this is not from the patching process and only needed on 32Bit 
+
+[./arch/arm/include/asm/irqflags.h](/docs/assets/files/2/irqflags.h)
+
+[./drivers/dma/bcm2835-dma.c](/docs/assets/files/2/bcm2835-dma.c)
+
+[./drivers/irqchip/irq-bcm2835.c](/docs/assets/files/2/irq-bcm2835.c)
+
+[./drivers/spi/spi-bcm2835.c](/docs/assets/files/2/spi-bcm2835.c)
+
+[files.zip](/docs/assets/files/2/files.zip)
 
 ## 5. Prepare kernel with xenomai
 ### 32bit
@@ -111,12 +116,12 @@ KERNEL=kernel7l
 ```
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2711_defconfig
 ```
-![image](https://user-images.githubusercontent.com/25773586/232506670-9a597da9-c27b-40ea-a21e-5fae45032c13.png)
+![image](/docs/assets/images/2/defconfig.png)
 
 ```
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
 ```
-![image](https://user-images.githubusercontent.com/25773586/232506782-dd1a5780-bfab-4935-9098-0c54b6eb5eb7.png)
+![image](/docs/assets/images/2/menuconfig.png)
 Edit the kernel config in menuconfig (minimal setup) and **Save**
 ```
 Kernel features —> Timer frequency 1000Hz
@@ -166,20 +171,20 @@ Kernel hacking -> Generic Kernel Debugging Instruments -> KGDB: kernel debugger[
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs -j 24
 ```
 Note: If you dont see this message, run the command again
-![image](https://user-images.githubusercontent.com/25773586/232519765-93205f2d-d1d3-4451-87bf-e2e8a7f24bfc.png)
+![image](/docs/assets/images/2/32bit_zimage.png)
 
 
 #### Before:
-![image](https://user-images.githubusercontent.com/25773586/232509709-4c6a39f3-74ea-478d-bf3e-97e5d3c08b3f.png)
+![image](/docs/assets/images/2/32bit_before_zimage.png)
 
 #### After:
-![image](https://user-images.githubusercontent.com/25773586/232519828-c878fbfd-397f-46ce-9590-d27a22989f64.png)
+![image](/docs/assets/images/2/32bit_after_zimage.png)
 
 ### 64bit
 ```
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j 24
 ```
-![image](https://user-images.githubusercontent.com/25773586/233056529-86decdc5-0ad8-4a47-a65a-8c050479bb21.png)
+![image](/docs/assets/images/2/64bit_image.png)
 
 ### 8. Install the created image on rPi
 #### 8.0 CM4 -> rpiboot 
@@ -195,7 +200,7 @@ sdb
    sdb1(boot)
    sdb2(root)
 ```
-![image](https://user-images.githubusercontent.com/25773586/232254370-a2e86f62-fa28-4d6a-90de-8f39588b855a.png)
+![image](/docs/assets/images/2/sd_card_ident.png)
 
 ### 32bit
 ```
@@ -285,5 +290,6 @@ sudo umount mnt/fat32
 sudo umount mnt/ext4
 ```
 #### 9. Reboot pi and check if the new kernel is installed 
-![image](https://user-images.githubusercontent.com/25773586/232522844-946521ad-9ead-4ccc-a086-4ef401235cdb.png)
-![image](https://user-images.githubusercontent.com/25773586/232526273-c310494c-ac43-464d-baef-5eaa13d4d115.png)
+![image](/docs/assets/images/2/patched_kernel.png)
+![image](/docs/assets/images/2/cobalt_on_patched_kernel.png)
+
