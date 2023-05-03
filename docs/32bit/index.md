@@ -1,4 +1,4 @@
-# Table of contents
+# Table of contents 32bit
 1. [A new beginning - Prerequisites](chapter_0.md)
 2. [What about dependencies?](chapter_1.md)
 3. [A manual affair - Patch the kernel with Cobalt](chapter_2.md)
