@@ -82,7 +82,6 @@ Hunk #4 succeeded at 1429 (offset 14 lines).
 ```
 
 #### Fixed files (no guarantees)
-[./include/linux/node.h](assets/files/2/node.h) Note: this is not from the patching process and only needed on 32Bit 
 
 [./arch/arm/include/asm/irqflags.h](assets/files/2/irqflags.h)
 
@@ -110,9 +109,16 @@ KERNEL=kernel8
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
 ```
 
+//todo:
+![image](assets/images/2/defconfig.png)
+
 ```
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
 ```
+
+//todo
+![image](assets/images/2/menuconfig.png)
+
 Edit the kernel config in menuconfig (minimal setup) and **Save**
 ```
 Kernel features —> Timer frequency 1000Hz
@@ -128,13 +134,24 @@ MemoryManagament options -> [] Allow for memory compaction
 Kernel hacking -> Generic Kernel Debugging Instruments -> KGDB: kernel debugger[]
 ```
 
-
 ### 7. Build the kernel
 ```
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j 24
 ```
+Note: If you dont see this message, run the command again
 
 ![image](assets/images/2/64bit_image.png)
+
+
+#### Before:
+
+//todo:
+![image](assets/images/2/32bit_before_zimage.png)
+
+#### After:
+
+//todo:
+![image](assets/images/2/32bit_after_zimage.png)
 
 ### 8. Install the created image on rPi
 #### 8.0 CM4 -> rpiboot 
@@ -196,6 +213,7 @@ sudo umount mnt/fat32
 ```
 sudo umount mnt/ext4
 ```
+
 #### 9. Reboot pi and check if the new kernel is installed 
 
 ![image](assets/images/2/patched_kernel.png)
