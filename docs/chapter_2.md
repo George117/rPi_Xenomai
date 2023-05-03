@@ -44,7 +44,7 @@ patch -p1 < ../patch-5.15.51-dovetail1.patch  2>&1 | tee patch_log.txt
 ```
 
 ## 4. Fix the files where the patch did not apply
-Full log: [patch_log.txt](/docs/assets/files/2/patch_log.txt)
+Full log: [patch_log.txt](assets/files/2/patch_log.txt)
 
 ```
 Hunk #7 FAILED at 177.
@@ -82,17 +82,17 @@ Hunk #4 succeeded at 1429 (offset 14 lines).
 ```
 
 #### Fixed files (no guarantees)
-[./include/linux/node.h](/docs/assets/files/2/node.h) Note: this is not from the patching process and only needed on 32Bit 
+[./include/linux/node.h](assets/files/2/node.h) Note: this is not from the patching process and only needed on 32Bit 
 
-[./arch/arm/include/asm/irqflags.h](/docs/assets/files/2/irqflags.h)
+[./arch/arm/include/asm/irqflags.h](assets/files/2/irqflags.h)
 
-[./drivers/dma/bcm2835-dma.c](/docs/assets/files/2/bcm2835-dma.c)
+[./drivers/dma/bcm2835-dma.c](assets/files/2/bcm2835-dma.c)
 
-[./drivers/irqchip/irq-bcm2835.c](/docs/assets/files/2/irq-bcm2835.c)
+[./drivers/irqchip/irq-bcm2835.c](assets/files/2/irq-bcm2835.c)
 
-[./drivers/spi/spi-bcm2835.c](/docs/assets/files/2/spi-bcm2835.c)
+[./drivers/spi/spi-bcm2835.c](assets/files/2/spi-bcm2835.c)
 
-[files.zip](/docs/assets/files/2/files.zip)
+[files.zip](assets/files/2/files.zip)
 
 ## 5. Prepare kernel with xenomai
 ### 32bit
@@ -116,12 +116,15 @@ KERNEL=kernel7l
 ```
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2711_defconfig
 ```
-![image](/docs/assets/images/2/defconfig.png)
+
+![image](assets/images/2/defconfig.png)
 
 ```
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
 ```
-![image](/docs/assets/images/2/menuconfig.png)
+
+![image](assets/images/2/menuconfig.png)
+
 Edit the kernel config in menuconfig (minimal setup) and **Save**
 ```
 Kernel features —> Timer frequency 1000Hz
@@ -171,20 +174,24 @@ Kernel hacking -> Generic Kernel Debugging Instruments -> KGDB: kernel debugger[
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs -j 24
 ```
 Note: If you dont see this message, run the command again
-![image](/docs/assets/images/2/32bit_zimage.png)
+
+![image](assets/images/2/32bit_zimage.png)
 
 
 #### Before:
-![image](/docs/assets/images/2/32bit_before_zimage.png)
+
+![image](assets/images/2/32bit_before_zimage.png)
 
 #### After:
-![image](/docs/assets/images/2/32bit_after_zimage.png)
+
+![image](assets/images/2/32bit_after_zimage.png)
 
 ### 64bit
 ```
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j 24
 ```
-![image](/docs/assets/images/2/64bit_image.png)
+
+![image](assets/images/2/64bit_image.png)
 
 ### 8. Install the created image on rPi
 #### 8.0 CM4 -> rpiboot 
@@ -200,7 +207,8 @@ sdb
    sdb1(boot)
    sdb2(root)
 ```
-![image](/docs/assets/images/2/sd_card_ident.png)
+
+![image](assets/images/2/sd_card_ident.png)
 
 ### 32bit
 ```
@@ -290,6 +298,7 @@ sudo umount mnt/fat32
 sudo umount mnt/ext4
 ```
 #### 9. Reboot pi and check if the new kernel is installed 
-![image](/docs/assets/images/2/patched_kernel.png)
-![image](/docs/assets/images/2/cobalt_on_patched_kernel.png)
 
+![image](assets/images/2/patched_kernel.png)
+
+![image](assets/images/2/cobalt_on_patched_kernel.png)

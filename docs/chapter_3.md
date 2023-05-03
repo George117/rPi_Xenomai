@@ -46,9 +46,11 @@ total_mem=3072
 ### 32bit
 You will most likely get this error: Why? because FU that why!
 Check this -> https://github.com/George117/rpi-kernel-compile/issues/7
-![image](/docs/assets/images/3/32bit_fu_error.png)
+
+![image](assets/images/3/32bit_fu_error.png)
 
 ### 64bit
 Works as expected :)
-![image](/docs/assets/images/3/64bit_latency_test.png)
+
+![image](assets/images/3/64bit_latency_test.png)
 
