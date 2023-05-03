@@ -82,7 +82,7 @@ Hunk #4 succeeded at 1429 (offset 14 lines).
 ```
 
 #### Fixed files (no guarantees)
-[./include/linux/node.h](assets/files/2/node.h) Note: this is not from the patching process and only needed on 32Bit 
+[./include/linux/node.h](assets/files/2/node.h)
 
 [./arch/arm/include/asm/irqflags.h](assets/files/2/irqflags.h)
 
@@ -95,20 +95,13 @@ Hunk #4 succeeded at 1429 (offset 14 lines).
 [files.zip](assets/files/2/files.zip)
 
 ## 5. Prepare kernel with xenomai
-### 32bit
 ```
 ../xenomai-v3.2.1/scripts/prepare-kernel.sh  --arch=arm --linux=./
-```
-
-### 64bit
-```
-../xenomai-v3.2.1/scripts/prepare-kernel.sh  --arch=arm64 --linux=./
 ```
 
 No log is displayed
 
 ## 6. Build Config
-### 32bit
 #### Configs rPi 4/400/CM4:
 ```
 KERNEL=kernel7l
@@ -140,36 +133,7 @@ MemoryManagament options -> [] Allow for memory compaction
 Kernel hacking -> Generic Kernel Debugging Instruments -> KGDB: kernel debugger[]
 ```
 
-### 64bit
-#### Configs rPi 4/400/CM4:
-```
-KERNEL=kernel8
-```
-```
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
-```
-
-```
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
-```
-Edit the kernel config in menuconfig (minimal setup) and **Save**
-```
-Kernel features —> Timer frequency 1000Hz
-General setup —> (-v7l-xeno3) Local version - append to kernel release
-```
-
-**Uncheck the following settings:**
-
-```
-CPU powermanagement –> CPU Frequency scaling –> [] CPU Frequency scaling
-CPU powermanagement –> CPU idle PM support []
-MemoryManagament options -> [] Allow for memory compaction
-Kernel hacking -> Generic Kernel Debugging Instruments -> KGDB: kernel debugger[]
-```
-
-
 ### 7. Build the kernel
-### 32bit
 ```
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs -j 24
 ```
@@ -185,13 +149,6 @@ Note: If you dont see this message, run the command again
 #### After:
 
 ![image](assets/images/2/32bit_after_zimage.png)
-
-### 64bit
-```
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j 24
-```
-
-![image](assets/images/2/64bit_image.png)
 
 ### 8. Install the created image on rPi
 #### 8.0 CM4 -> rpiboot 
@@ -210,7 +167,6 @@ sdb
 
 ![image](assets/images/2/sd_card_ident.png)
 
-### 32bit
 ```
 cd linux
 ```
@@ -254,49 +210,6 @@ sudo umount mnt/fat32
 sudo umount mnt/ext4
 ```
 
-### 64bit
-```
-cd linux
-```
-```
-mkdir mnt
-```
-```
-mkdir mnt/fat32
-```
-```
-mkdir mnt/ext4
-```
-```
-sudo mount /dev/sdb1 mnt/fat32
-```
-```
-sudo mount /dev/sdb2 mnt/ext4
-```
-```
-sudo env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=mnt/ext4 modules_install
-```
-```
-sudo cp mnt/fat32/$KERNEL.img mnt/fat32/$KERNEL-backup.img
-```
-```
-sudo cp arch/arm64/boot/Image mnt/fat32/$KERNEL.img
-```
-```
-sudo cp arch/arm64/boot/dts/broadcom/*.dtb mnt/fat32/
-```
-```
-sudo cp arch/arm64/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
-```
-```
-sudo cp arch/arm64/boot/dts/overlays/README mnt/fat32/overlays/
-```
-```
-sudo umount mnt/fat32
-```
-```
-sudo umount mnt/ext4
-```
 #### 9. Reboot pi and check if the new kernel is installed 
 
 ![image](assets/images/2/patched_kernel.png)
