@@ -7,7 +7,7 @@
 
 ## OS: 
  - Ubuntu 22.04.2 64 bit: [Download Link](https://releases.ubuntu.com/jammy/ubuntu-22.04.2-desktop-amd64.iso)
-![ubuntu_details](/docs/assets/images/0/ubuntu_details.png)
+![ubuntu_details](assets/images/0/ubuntu_details.png)
 
 # 2. The Target
 ## HW:  
