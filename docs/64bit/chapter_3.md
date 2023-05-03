@@ -43,12 +43,6 @@ Add at the top
 total_mem=3072
 ````
 
-### 32bit
-You will most likely get this error: Why? because FU that why!
-Check this -> https://github.com/George117/rpi-kernel-compile/issues/7
-
-![image](assets/images/3/32bit_fu_error.png)
-
 ### 64bit
 Works as expected :)
 

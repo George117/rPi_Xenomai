@@ -5,12 +5,6 @@ sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev
 ```
 
 #### 1.2 Install crosscompile toolchain
-### 32bit
-```
-sudo apt install crossbuild-essential-armhf
-```
-
-### 64Bit
 ```
 sudo apt install crossbuild-essential-arm64
 ```

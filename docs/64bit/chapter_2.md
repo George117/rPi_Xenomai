@@ -95,12 +95,6 @@ Hunk #4 succeeded at 1429 (offset 14 lines).
 [files.zip](assets/files/2/files.zip)
 
 ## 5. Prepare kernel with xenomai
-### 32bit
-```
-../xenomai-v3.2.1/scripts/prepare-kernel.sh  --arch=arm --linux=./
-```
-
-### 64bit
 ```
 ../xenomai-v3.2.1/scripts/prepare-kernel.sh  --arch=arm64 --linux=./
 ```
@@ -108,39 +102,6 @@ Hunk #4 succeeded at 1429 (offset 14 lines).
 No log is displayed
 
 ## 6. Build Config
-### 32bit
-#### Configs rPi 4/400/CM4:
-```
-KERNEL=kernel7l
-```
-```
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2711_defconfig
-```
-
-![image](assets/images/2/defconfig.png)
-
-```
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
-```
-
-![image](assets/images/2/menuconfig.png)
-
-Edit the kernel config in menuconfig (minimal setup) and **Save**
-```
-Kernel features —> Timer frequency 1000Hz
-General setup —> (-v7l-xeno3) Local version - append to kernel release
-```
-
-**Uncheck the following settings:**
-
-```
-CPU powermanagement –> CPU Frequency scaling –> [] CPU Frequency scaling
-CPU powermanagement –> CPU idle PM support []
-MemoryManagament options -> [] Allow for memory compaction
-Kernel hacking -> Generic Kernel Debugging Instruments -> KGDB: kernel debugger[]
-```
-
-### 64bit
 #### Configs rPi 4/400/CM4:
 ```
 KERNEL=kernel8
@@ -169,24 +130,6 @@ Kernel hacking -> Generic Kernel Debugging Instruments -> KGDB: kernel debugger[
 
 
 ### 7. Build the kernel
-### 32bit
-```
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs -j 24
-```
-Note: If you dont see this message, run the command again
-
-![image](assets/images/2/32bit_zimage.png)
-
-
-#### Before:
-
-![image](assets/images/2/32bit_before_zimage.png)
-
-#### After:
-
-![image](assets/images/2/32bit_after_zimage.png)
-
-### 64bit
 ```
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j 24
 ```
@@ -209,50 +152,6 @@ sdb
 ```
 
 ![image](assets/images/2/sd_card_ident.png)
-
-### 32bit
-```
-cd linux
-```
-```
-mkdir mnt
-```
-```
-mkdir mnt/fat32
-```
-```
-mkdir mnt/ext4
-```
-```
-sudo mount /dev/sdb1 mnt/fat32
-```
-```
-sudo mount /dev/sdb2 mnt/ext4
-```
-```
-sudo env PATH=$PATH make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=mnt/ext4 modules_install
-```
-```
-sudo cp mnt/fat32/$KERNEL.img mnt/fat32/$KERNEL-backup.img
-```
-```
-sudo cp arch/arm/boot/zImage mnt/fat32/$KERNEL.img
-```
-```
-sudo cp arch/arm/boot/dts/*.dtb mnt/fat32/
-```
-```
-sudo cp arch/arm/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
-```
-```
-sudo cp arch/arm/boot/dts/overlays/README mnt/fat32/overlays/
-```
-```
-sudo umount mnt/fat32
-```
-```
-sudo umount mnt/ext4
-```
 
 ### 64bit
 ```
