@@ -43,7 +43,7 @@ Add at the top
 total_mem=3072
 ````
 
-### 64bit
+### 5. Test
 Works as expected :)
 
 ![image](assets/images/3/64bit_latency_test.png)
