@@ -165,7 +165,6 @@ sdb
 
 ![image](assets/images/2/sd_card_ident.png)
 
-### 64bit
 ```
 cd linux
 ```
