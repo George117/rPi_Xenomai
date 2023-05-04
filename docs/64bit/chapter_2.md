@@ -108,15 +108,12 @@ KERNEL=kernel8
 ```
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
 ```
-
-//todo:
 ![image](assets/images/2/defconfig.png)
 
 ```
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
 ```
 
-//todo
 ![image](assets/images/2/menuconfig.png)
 
 Edit the kernel config in menuconfig (minimal setup) and **Save**
