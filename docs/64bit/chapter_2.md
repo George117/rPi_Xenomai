@@ -142,7 +142,6 @@ Note: If you dont see this message, run the command again
 
 #### Before:
 
-//todo:
 ![image](assets/images/2/32bit_before_zimage.png)
 
 #### After:
