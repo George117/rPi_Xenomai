@@ -146,7 +146,6 @@ Note: If you dont see this message, run the command again
 
 #### After:
 
-//todo:
 ![image](assets/images/2/32bit_after_zimage.png)
 
 ### 8. Install the created image on rPi
@@ -166,7 +165,6 @@ sdb
 
 ![image](assets/images/2/sd_card_ident.png)
 
-### 64bit
 ```
 cd linux
 ```
