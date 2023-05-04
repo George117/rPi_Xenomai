@@ -18,6 +18,7 @@
 ![cm4](assets/images/0/cm4_io_board.jpg)
 
 - rPi4 
+<img src="assets/images/0/rpi4.jpg" alt= “rPi4” width="36%" height="36%">
 
 ## OS:  
  - Raspbian Lite 64bit 2023-02-21: [Download Link](https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2023-02-22/2023-02-21-raspios-bullseye-arm64-lite.img.xz)
