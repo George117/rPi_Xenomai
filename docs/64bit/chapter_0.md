@@ -22,5 +22,4 @@
 ## OS:  
  - Raspbian Lite 64bit 2023-02-21: [Download Link](https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2023-02-22/2023-02-21-raspios-bullseye-arm64-lite.img.xz)
 
-//todo:
 ![raspbian_details](assets/images/0/raspbian_details.png)
