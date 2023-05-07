@@ -14,3 +14,5 @@
 These steps were tested on a Raspberry Pi Compute Module 4 starting from a Raspbian Lite 64bit distribution.
 
 ![latency](assets/images/latency_tests.png)
+
+Note: If you see any mistakes please let me know, make an issue :D.
