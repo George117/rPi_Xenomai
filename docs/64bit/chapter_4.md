@@ -9,7 +9,7 @@ Create the file ``xeno.conf``
 ```
 sudo nano xeno.conf
 ```
-
+Add the following two lines and save the files
 ```bash
 # xeno dynamic libs path
 /usr/xenomai/lib/
