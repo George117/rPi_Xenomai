@@ -46,5 +46,5 @@ total_mem=3072
 ### 5. Test
 Works as expected :)
 
-![image](assets/images/3/64bit_latency_test.png)
+![image](assets/images/3/latency_test.png)
 

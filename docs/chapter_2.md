@@ -137,16 +137,16 @@ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j 24
 ```
 Note: If you dont see this message, run the command again
 
-![image](assets/images/2/64bit_image.png)
+![image](assets/images/2/image.png)
 
 
 #### Before:
 
-![image](assets/images/2/32bit_before_zimage.png)
+![image](assets/images/2/before_zimage.png)
 
 #### After:
 
-![image](assets/images/2/32bit_after_zimage.png)
+![image](assets/images/2/after_zimage.png)
 
 ### 8. Install the created image on rPi
 #### 8.0 CM4 -> rpiboot 
