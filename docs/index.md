@@ -8,6 +8,7 @@
 3. [A manual affair - Patch the kernel with Cobalt](chapter_2.md)
 4. [Are we there yet? Install Xenomai on rPi](chapter_3.md)
 5. [Mandatory Hello World App](chapter_4.md)
+
 &nbsp;
 &nbsp;
 These steps were tested on a Raspberry Pi Compute Module 4 starting from a Raspbian Lite 64bit distribution.
