@@ -1,4 +1,3 @@
-# [Documentation](https://source.denx.de/Xenomai/xenomai/-/wikis/Installing_Xenomai_3)
 ### 1. Download Xenomai v3.2.1
 ```
 wget https://source.denx.de/Xenomai/xenomai/-/archive/v3.2.1/xenomai-v3.2.1.tar.bz2
@@ -48,3 +47,5 @@ Works as expected :)
 
 ![image](assets/images/3/latency_test.png)
 
+### Documentation:
+#### [Installing Xenomai 3](https://source.denx.de/Xenomai/xenomai/-/wikis/Installing_Xenomai_3)
