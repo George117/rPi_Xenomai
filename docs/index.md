@@ -13,8 +13,11 @@
 &nbsp;
 These steps were tested on a Raspberry Pi Compute Module 4 starting from a Raspbian Lite 64bit distribution.
 
-Linux Kernel used: 5.15.52
-Interrupt Pipeline: Dovetail 5.15.51
+Linux Kernel: **5.15.52**
+
+IRQ Pipeline: **Dovetail 5.15.51**
+&nbsp;
+&nbsp;
 
 ![latency](assets/images/latency_tests.png)
 
