@@ -2,8 +2,6 @@
 ## Step by step guide: [Here](https://george117.github.io/rPi_Xenomai/)
 
 ### Experience the glory of Xenomai on your rPi!
-### NB: Even though this guide treats 32bit and 64bit you should use the 64bit, it needs no workarounds or other shady things to do. It just works :) .
-
 
 These steps were tested on a Raspberry Pi Compute Module 4 starting from a Raspbian Lite 64bit distribution.
 
