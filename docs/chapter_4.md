@@ -59,7 +59,7 @@ If everything worked out so far, you should see the xenomai/cobalt version print
 ![version](assets/images/4/xeno_app_version.png)
 
 Note:
-Maybe you already saw the the source code for the [Hello World](https://github.com/George117/Xenomai_Hello_World/blob/main/src/hello_world.c) is just a ``printf``; the command line option ``version`` comes directly form the xenomai libs. Read the below documentation for details.
+Maybe you already saw the the source code for the [Hello World](https://github.com/George117/Xenomai_Hello_World/blob/main/src/hello_world.c) is just a ``printf``. The command line option ``version`` comes directly from the xenomai libs. Read the below documentation for details.
 
 ### Documentation:
 #### [Building Applications For Xenomai 3](https://source.denx.de/Xenomai/xenomai/-/wikis/Building_Applications_For_Xenomai_3)
