@@ -27,3 +27,31 @@ sudo reboot now
 ```
 
 ![bindings](assets/images/4/xeno_libs_bindings.png)
+
+## 2. Build an App
+### 2.1 Clone the example app
+```bash
+git clone https://github.com/George117/Xenomai_Hello_World
+```
+
+### 2.2 Change dir to ``src`` folder
+```bash
+cd Xenomai_Hello_World/src
+```
+
+### 2.3 Run the ``make`` command
+```bash
+make
+```
+
+### 2.4 Run the app
+```
+sudo ./hello_world
+```
+If everything went fine you should see the famous ``Hello world`` print.
+
+### 2.5 Check if the xenomai bindings work
+```
+sudo ./hello_world --version
+```
+![version](assets/images/4/xeno_app_version.png)
