@@ -13,6 +13,9 @@
 &nbsp;
 These steps were tested on a Raspberry Pi Compute Module 4 starting from a Raspbian Lite 64bit distribution.
 
+Linux Kernel used: 5.15.52
+Interrupt Pieline: Dovetail 5.15.51
+
 ![latency](assets/images/latency_tests.png)
 
 Note: If you see any mistakes please let me know, make an issue :D.
