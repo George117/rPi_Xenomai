@@ -4,7 +4,7 @@
 git clone --branch rpi-5.15.y https://github.com/raspberrypi/linux
 ```
 
-### 1.2. Checkout 5.15.51(close/same as dovetail patch)
+### 1.2. Checkout 5.15.52(close/same as dovetail patch)
 ```
 cd linux
 ```
