@@ -1,4 +1,3 @@
-# [Documentation](https://source.denx.de/Xenomai/xenomai/-/wikis/Building_Applications_For_Xenomai_3)
 ## 1. Add xeno dynamic libraries path to dynamic linker
 
 ### 1.1 Change dir to dynamic linker config folder
@@ -54,4 +53,14 @@ If everything went fine you should see the famous ``Hello world`` print.
 ```
 sudo ./hello_world --version
 ```
+
+If everything worked out so far, you should see the xenomai/cobalt version printed.
+
 ![version](assets/images/4/xeno_app_version.png)
+
+Note:
+Maybe you already saw the the source code for the [Hello World](https://github.com/George117/Xenomai_Hello_World/blob/main/src/hello_world.c) is just a ``printf``; the command line option ``version`` comes directly form the xenomai libs. Read the below documentation for details.
+
+### Documentation:
+#### [Building Applications For Xenomai 3](https://source.denx.de/Xenomai/xenomai/-/wikis/Building_Applications_For_Xenomai_3)
+#### [App Setup And Init](https://source.denx.de/Xenomai/xenomai/-/wikis/App_Setup_And_Init)
