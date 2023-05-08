@@ -1,3 +1,4 @@
+# The folowing steps are done on the target(rPi)
 ### 1. Download Xenomai v3.2.1
 ```
 wget https://source.denx.de/Xenomai/xenomai/-/archive/v3.2.1/xenomai-v3.2.1.tar.bz2
