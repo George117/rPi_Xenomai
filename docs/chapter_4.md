@@ -1,3 +1,4 @@
+# The folowing steps are done on the target(rPi)
 ## 1. Add xeno dynamic libraries path to dynamic linker
 
 ### 1.1 Change dir to dynamic linker config folder
