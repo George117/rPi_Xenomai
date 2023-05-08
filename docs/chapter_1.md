@@ -12,5 +12,5 @@ sudo apt install crossbuild-essential-arm64
 # 2. Raspbian 
 #### 2.1 Install libs/tools used by xenomai
 ```
-sudo apt-get install autoconf autogen autoconf libtool 
+sudo apt-get install autoconf autogen libtool 
 ```
