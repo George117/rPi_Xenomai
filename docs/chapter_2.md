@@ -1,4 +1,6 @@
 # The folowing steps are done on the host(Ubuntu)
+&nbsp;
+&nbsp;
 ## 1. Linux
 ### 1.1. Clone the rPi 5.15 branch of Linux
 ```
