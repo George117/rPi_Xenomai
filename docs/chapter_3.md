@@ -11,7 +11,7 @@ tar xjvf xenomai-v3.2.1.tar.bz2
 ### 3. Config and install xenomai
 In case you missed Step 2 in Chapter 1
 ```
-sudo apt-get install autoconf autogen autoconf libtool 
+sudo apt-get install autoconf autogen libtool 
 ```
 ```
 cd xenomai-v3.2.1
