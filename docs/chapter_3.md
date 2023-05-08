@@ -4,6 +4,11 @@ wget https://source.denx.de/Xenomai/xenomai/-/archive/v3.2.1/xenomai-v3.2.1.tar.
 ```
 
 ### 2. Unzip xenomai
+In case you missed Step 2 in Chapter 1
+```
+sudo apt-get install autoconf autogen autoconf libtool 
+```
+
 ```
 tar xjvf xenomai-v3.2.1.tar.bz2
 ```
