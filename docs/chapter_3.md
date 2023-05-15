@@ -48,6 +48,11 @@ Add at the top
 ````
 total_mem=3072
 ````
+Disable Bluetooth
+```
+dtoverlay=pi3-disable-bt
+```
+Save config.txt
 
 ### 5. Test
 Works as expected :)
