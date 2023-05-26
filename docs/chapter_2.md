@@ -128,7 +128,12 @@ General setup —> (-v7l-xeno3) Local version - append to kernel release
 **Uncheck the following settings:**
 
 ```
-CPU powermanagement –> CPU Frequency scaling –> [] CPU Frequency scaling  (headsup -> this disables the governor -> default cpufreq = 600Mhz)
+CPU powermanagement –> CPU Frequency scaling –> [] CPU Frequency scaling  
+(
+headsup -> this disables the governor -> default cpufreq = 600Mhz
+Depending on your needs maybe its better to set the governor to Performace by default
+)
+
 CPU powermanagement –> CPU idle PM support []
 MemoryManagament options -> [] Allow for memory compaction
 Kernel hacking -> Generic Kernel Debugging Instruments -> KGDB: kernel debugger[]
