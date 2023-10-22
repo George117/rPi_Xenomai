@@ -23,7 +23,7 @@ cd ..
 ### 2.1 Download Xenomai v3.2.1
 
 ```
-curl https://github.com/George117/rPi_Xenomai/files/13062981/xenomai-v3.2.1.tar.zip --output xenomai-v3.2.1.tar.bz2
+curl -L https://github.com/George117/rPi_Xenomai/files/13062981/xenomai-v3.2.1.tar.zip --output xenomai-v3.2.1.tar.bz2
 ```
 ```
 tar xjvf xenomai-v3.2.1.tar.bz2
