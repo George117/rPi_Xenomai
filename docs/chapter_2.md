@@ -23,7 +23,7 @@ cd ..
 ### 2.1 Download Xenomai v3.2.1
 
 ```
-curl -L https://github.com/George117/rPi_Xenomai/files/13062981/xenomai-v3.2.1.tar.zip --output xenomai-v3.2.1.tar.bz2
+curl -L https://github.com/George117/rPi_Xenomai/blob/main/docs/assets/files/2/xenomai-v3.2.1.tar.bz2 --output xenomai-v3.2.1.tar.bz2
 ```
 ```
 tar xjvf xenomai-v3.2.1.tar.bz2
@@ -32,7 +32,7 @@ tar xjvf xenomai-v3.2.1.tar.bz2
 ### 2.2 Download Dovetail v5.15.51 patch
 
 ```
-curl -L https://github.com/George117/rPi_Xenomai/files/13063018/patch-5.15.51-dovetail1.patch.zip --output patch-5.15.51-dovetail1.patch
+curl -L https://github.com/George117/rPi_Xenomai/blob/main/docs/assets/files/2/patch-5.15.51-dovetail1.patch --output patch-5.15.51-dovetail1.patch
 ```
 
 ## 3. Patch the linux source code
