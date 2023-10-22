@@ -32,10 +32,7 @@ tar xjvf xenomai-v3.2.1.tar.bz2
 ### 2.2 Download Dovetail v5.15.51 patch
 
 ```
-wget https://xenomai.org/downloads/dovetail/patch-5.15.51-dovetail1.patch.bz2
-```
-```
-bzip2 -d patch-5.15.51-dovetail1.patch.bz2
+curl -L https://github.com/George117/rPi_Xenomai/files/13063018/patch-5.15.51-dovetail1.patch.zip --output patch-5.15.51-dovetail1.patch
 ```
 
 ## 3. Patch the linux source code
