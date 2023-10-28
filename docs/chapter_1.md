@@ -1,7 +1,7 @@
 # 1. Ubuntu
 #### 1.1 Install libs/tools
 ```
-sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev
+sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev curl
 ```
 
 #### 1.2 Install crosscompile toolchain
