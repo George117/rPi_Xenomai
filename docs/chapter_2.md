@@ -140,7 +140,7 @@ Kernel hacking -> Generic Kernel Debugging Instruments -> KGDB: kernel debugger[
 ```
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs -j 24
 ```
-Note: If you dont see this message, run the command again
+Note: If you dont see this message, run the command again(only for your peace of mind, the image exists :) )
 
 ![image](assets/images/2/image.png)
 
